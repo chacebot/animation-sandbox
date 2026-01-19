@@ -1,0 +1,68 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Build & Run Commands
+
+This is a Vite React TypeScript application:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## Architecture
+
+### Tech Stack
+- **React 18** with **TypeScript**
+- **Vite** build tool
+- No external UI libraries (pure React + CSS)
+
+### Project Structure
+- `src/components/` - Animation components and sandbox UI
+- `src/App.tsx` - Main app component
+- `src/index.css` - Global styles
+
+### Animation Components
+All animation components are defined in `AnimationSandbox.tsx`:
+- Each component is a functional React component
+- Components accept `text` (required) and `speed` (optional) props
+- All animations use React hooks (`useState`, `useEffect`) for state management
+- CSS animations and keyframes are defined inline or in `<style>` tags
+
+### Patterns
+- Self-contained animation components (no external dependencies)
+- Reusable and portable - can be copied into any React project
+- Dark minimalist theme matching modern design aesthetics
+
+## Workflow Preferences
+
+### Planning & Commits
+- For non-trivial changes, propose a short plan (1-6 bullets) describing edits, tests, and files before proceeding
+- Apply minimal, focused edits; one atomic commit per logically grouped change
+- Use short, descriptive commit messages
+- Run build before committing; stop and report failures with suggested fixes
+- Create feature branches for changes (e.g., `git checkout -b feature/new-animation`)
+- Update README.md when adding new animation types or changing behavior
+
+### Code Quality
+- Follow React and TypeScript best practices
+- Keep animation components small and focused
+- When referencing code, show exact `path/to/file` and function names
+- Maintain consistent component prop interfaces
+- Use descriptive variable names for animation states
+
+### Adding New Animations
+1. Create a new component function in `AnimationSandbox.tsx`
+2. Add it to the `animations` array with appropriate category
+3. Test the animation in the sandbox
+4. Update README.md with the new animation type
