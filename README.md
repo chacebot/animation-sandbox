@@ -1,10 +1,10 @@
 # Animation Sandbox
 
-A standalone React application for previewing and testing text reveal animations. This sandbox provides 16 different animation variations, with a focus on letter-by-letter reveal effects.
+A standalone React application for previewing and testing text reveal animations. This sandbox provides 17 different animation variations, with a focus on letter-by-letter reveal effects.
 
 ## Features
 
-- **16 Animation Variations**: Letter-by-letter, word-by-word, and other text reveal effects
+- **17 Animation Variations**: Letter-by-letter, word-by-word, and other text reveal effects
 - **Interactive Preview**: Click any animation card to select it
 - **Minimalist Dark Theme**: Clean, modern interface
 - **Reusable Components**: Copy animation components directly into your projects
@@ -67,7 +67,7 @@ animation-sandbox/
 
 ## Technologies
 
-- **React 18** with **TypeScript**
+- **React 19** with **TypeScript**
 - **Vite** for fast development and building
 - No external dependencies (pure React + CSS)
 

@@ -48,11 +48,27 @@ All animation components are defined in `AnimationSandbox.tsx`:
 
 ### Planning & Commits
 - For non-trivial changes, propose a short plan (1-6 bullets) describing edits, tests, and files before proceeding
-- Apply minimal, focused edits; one atomic commit per logically grouped change
+- **Commit frequently**: Make commits after completing individual tasks, small changes, or logical units of work - don't wait for large batches of changes
+- Apply minimal, focused edits; prefer smaller, more frequent commits over larger, infrequent ones
+- Commit after each meaningful change: when a function is added, a bug is fixed, a test passes, or a small feature is complete
 - Use short, descriptive commit messages
 - Run build before committing; stop and report failures with suggested fixes
 - Create feature branches for changes (e.g., `git checkout -b feature/new-animation`)
 - Update README.md when adding new animation types or changing behavior
+
+### Commit Frequency Guidelines
+- **Default to committing more often**: When in doubt, commit. It's better to have many small commits than few large ones
+- Commit after completing any of the following:
+  - Adding a new function or component
+  - Fixing a bug
+  - Adding or updating tests
+  - Refactoring a specific piece of code
+  - Updating documentation for a specific change
+  - Making a small UI change or styling update
+  - Adding a new feature that is functionally complete (even if part of a larger feature)
+- Don't wait to accumulate multiple changes before committing
+- Each commit should represent a single, complete thought or change
+- If you've made several edits and haven't committed yet, commit the current changes before continuing
 
 ### Code Quality
 - Follow React and TypeScript best practices
