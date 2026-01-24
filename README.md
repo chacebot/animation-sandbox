@@ -2,6 +2,8 @@
 
 A standalone React application for previewing and testing text reveal animations. This sandbox provides 17 different animation variations, with a focus on letter-by-letter reveal effects.
 
+![Animation Sandbox Demo](demo.gif)
+
 ## Features
 
 - **17 Animation Variations**: Letter-by-letter, word-by-word, and other text reveal effects
