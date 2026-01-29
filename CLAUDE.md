@@ -18,6 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Provide constructive feedback** that helps improve code quality while being respectful and actionable
 
 When code is presented for review, Claude should:
+
 1. Analyze the code changes comprehensively
 2. Identify any issues or areas for improvement
 3. Provide specific, actionable feedback
@@ -46,23 +47,28 @@ npm run preview
 ## Architecture
 
 ### Tech Stack
+
 - **React 18** with **TypeScript**
 - **Vite** build tool
 - No external UI libraries (pure React + CSS)
 
 ### Project Structure
+
 - `src/components/` - Animation components and sandbox UI
 - `src/App.tsx` - Main app component
 - `src/index.css` - Global styles
 
 ### Animation Components
+
 All animation components are defined in `AnimationSandbox.tsx`:
+
 - Each component is a functional React component
 - Components accept `text` (required) and `speed` (optional) props
 - All animations use React hooks (`useState`, `useEffect`) for state management
 - CSS animations and keyframes are defined inline or in `<style>` tags
 
 ### Patterns
+
 - Self-contained animation components (no external dependencies)
 - Reusable and portable - can be copied into any React project
 - Dark minimalist theme matching modern design aesthetics
@@ -70,6 +76,7 @@ All animation components are defined in `AnimationSandbox.tsx`:
 ## Workflow Preferences
 
 ### Planning & Commits
+
 - **When reviewing code**: Provide feedback on whether the plan is appropriate and complete
 - **Review commit structure**: Verify that changes are minimal, focused, and logically grouped
 - **Review commit messages**: Ensure they are short, descriptive, and follow conventional commit format when applicable
@@ -78,6 +85,7 @@ All animation components are defined in `AnimationSandbox.tsx`:
 - **Review documentation updates**: Ensure README.md is updated when adding new animation types or changing behavior
 
 ### Code Quality
+
 - **As a reviewer, verify** that code follows React and TypeScript best practices
 - **Check that** animation components are kept small and focused
 - When referencing code, show exact `path/to/file` and function names
@@ -85,6 +93,7 @@ All animation components are defined in `AnimationSandbox.tsx`:
 - **Verify** descriptive variable names are used for animation states
 
 ### Code Review Checklist
+
 When reviewing code written by Cursor, systematically check:
 
 - **Functionality**: Does the code work correctly? Are edge cases handled?
@@ -102,12 +111,14 @@ When reviewing code written by Cursor, systematically check:
 - **Animation Best Practices**: Are animations performant and smooth? Do they follow React patterns?
 
 ### Adding New Animations
+
 1. Create a new component function in `AnimationSandbox.tsx`
 2. Add it to the `animations` array with appropriate category
 3. Test the animation in the sandbox
 4. Update README.md with the new animation type
 
 ### Providing Review Feedback
+
 When providing code review feedback:
 
 - **Be specific**: Point to exact lines, functions, or files when identifying issues

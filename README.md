@@ -27,6 +27,7 @@ npm run build
 ## Animation Types
 
 ### Letter-by-Letter Variations (8 types)
+
 1. **Letter-by-Letter (Standard)** - Basic character-by-character reveal
 2. **Block Reveal (Wipe)** - Text revealed as a block moves across
 3. **Gradient Block Reveal** - Gradient mask sweeps to reveal text
@@ -37,6 +38,7 @@ npm run build
 8. **Steam Portfolio Style** - Smooth letter reveal with slide-up effect (inspired by steam-portfolio-demo.vercel.app)
 
 ### Other Animations (9 types)
+
 - Word-by-Word Fade
 - Gradient Sweep
 - Word Slide Up
@@ -76,6 +78,7 @@ animation-sandbox/
 ## Customization
 
 Each animation component accepts:
+
 - `text: string` - The text to animate
 - `speed?: number` - Animation speed in milliseconds (optional)
 

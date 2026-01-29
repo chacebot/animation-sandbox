@@ -1,8 +1,8 @@
-import { AnimationSandbox } from './components/AnimationSandbox'
-import './App.css'
+import { AnimationSandbox } from './components/AnimationSandbox';
+import './App.css';
 
 function App() {
-  return <AnimationSandbox />
+  return <AnimationSandbox />;
 }
 
-export default App
+export default App;
